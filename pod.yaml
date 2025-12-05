@@ -4,8 +4,9 @@ metadata:
   name: roboshop-Pod
 spec:
   containers: 
-  - name: roboshop-Pod
-    image: nginx
-    ports:
-    - containerPort: 80
+    - name: roboshop-Pod
+      image: nginx
+      ports:
+        - containerPort: 80
     
+
