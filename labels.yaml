@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: Pod
 metadata:
-   name: my-labels
-   labels:
+  name: my-labels
+  labels:
     - trainer: raghu
       course: devops
 spec:
@@ -10,4 +10,4 @@ spec:
     - name: labels 
       image: nginx
       ports:
-       - containerPort: 80
+        - containerPort: 80
