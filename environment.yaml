@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: pod
+metadata: 
+  name: env-pod
+  labels:
+    app: devops
+    tarining: started
+spec:
+  containers:
+    - name: env-pod
+      image: nginx
+      env:
+       - name: demo-greeting
+         value: "hai"
