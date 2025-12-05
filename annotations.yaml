@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata: 
- name: annotation-Pod
+ name: annotation-pod
  annotations:
     name: mycoure details
     trainer: raghuramulu
 spec:
  containers:
-  - name: annotation-Pod
+  - name: annotation-pod
     image: nginx
     ports:
      - containerPort: 80
