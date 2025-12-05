@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: resources-pod
+  Namespace: mynamespace
+spec:
+  containers:
+    - name: resource
+      image: nginx
+      resources:
+        requests:
+          memory: "124mi"
+          cpu: "130m"
+        limits:
+          memory: "140mi"
+          cpu: "150m"
+      ports:
+        -containerPort: 80
