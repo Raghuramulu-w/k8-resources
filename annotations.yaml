@@ -3,7 +3,7 @@ kind: Pod
 metadata: 
  name: annotation-Pod
  annotations:
-  - name: mycoure details
+    name: mycoure details
     trainer: raghuramulu
 spec:
  containers:
