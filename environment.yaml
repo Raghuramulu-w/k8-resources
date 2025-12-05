@@ -1,10 +1,10 @@
 apiVersion: v1
-kind: pod
+kind: Pod
 metadata: 
   name: env-pod
   labels:
     app: devops
-    tarining: started
+    training: started
 spec:
   containers:
     - name: env-pod
