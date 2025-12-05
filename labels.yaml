@@ -3,8 +3,8 @@ kind: Pod
 metadata:
   name: my-labels
   labels:
-    - trainer: raghu
-      course: devops
+    trainer: raghu
+    course: devops
 spec:
   containers:
     - name: labels 
