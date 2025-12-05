@@ -6,7 +6,7 @@ spec:
  containers: 
   - name: roboshop-Pod
     image: nginx
-    port:
-     - containerPorts: 80
+    ports:
+     - containerPort: 8080
       
 
