@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+ name: mycongig
+ data: 
+  app: devop
+  trainer: raghuramulu
+---
+apiVersion: v1
+kind: pod
+metadata: 
+ name: pod-config
+ labels: 
+   app: mydevop
+   tier: web
+spec:
+ containers:
+  - name: pod-with
+    image: nginx
+    envFrom:
+     - ConfigMapref:
+         name: myconfig
+    ports:
+     -containerPort: 80
+
