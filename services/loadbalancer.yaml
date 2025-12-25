@@ -11,4 +11,18 @@ spec:
      image: nginx
      ports:
       - containerPort: 80
+---
+apiVeersion: v1
+kind: Service
+metadata:
+ name: pod-service
+spec:
+ type: loadbalance
+ selector:
+   app: devops
+   duration: 3hours
+ ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 9376
 
