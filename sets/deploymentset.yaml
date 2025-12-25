@@ -7,7 +7,7 @@ metadata:
    tier: backend
 spec:
   #replicas: 3
-  type: DeploymentSet
+  #type: DeploymentSet
   selector: 
    matchLabels:
      app: Deploy
