@@ -9,5 +9,5 @@ spec:
  containers: 
   - name: myservice
     image: nginx
- ports:
-   - conainerPort: 80
+    ports:
+     - conainerPort: 80
