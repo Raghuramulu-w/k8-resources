@@ -3,8 +3,8 @@ kind: Pod
 metadata:
  name: pod-loadbalancer
  labels: 
-   app: devops
-   duration: 3
+  app: devops
+  duration: 3
 spec:
   containers:
    - name: pod-loadbalancer
