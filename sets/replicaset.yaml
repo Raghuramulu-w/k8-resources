@@ -16,7 +16,7 @@ spec:
      labels:
       app: nginx
       tier: frontend
-    spec::
+    spec:
       containers:
        - name: pod-name
          image: nginx
