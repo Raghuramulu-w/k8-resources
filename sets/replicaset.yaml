@@ -1,0 +1,24 @@
+apiVersioon: v1
+kind: ReplicaSet
+metadata:
+ name: replicaset
+ labels:
+  app: nginx
+  tier: frontend
+spec:
+ replicas: 3
+ selector:
+   matchLabels:
+    app: nginx
+    tier: frontend
+template:
+  metadata:
+   labels:
+     app: nginx
+     tier: frontend
+  spec::
+   containers:
+    - name: pod-name
+      image: nginx
+      ports:
+       - containerPort: 80
