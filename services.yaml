@@ -20,7 +20,7 @@ spec:
  selector: 
   app: nginx
   demo: service
-  ports:
-   - protocal: tcp
-     port: 80
-     targetPort: 9376
+ports:
+  - protocal: tcp
+    port: 80
+    targetPort: 9376
