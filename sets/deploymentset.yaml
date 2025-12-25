@@ -20,7 +20,7 @@ spec:
       tier: backend
    spec:
     containers:
-     - name: Deploy
+     - name: deploy
        image: nginx
        ports:
         - containerPort: 80
