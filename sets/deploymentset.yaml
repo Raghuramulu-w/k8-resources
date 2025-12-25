@@ -18,8 +18,8 @@ spec:
     labels:
       app: Deploy
       tier: backend
-  spec:
-   containers:
+   spec:
+    containers:
      - name: Deploy
        image: nginx
        ports:
