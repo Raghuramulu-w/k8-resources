@@ -17,7 +17,7 @@ kind: Service
 metadata:
  name: service-nodeport
 spec:
-  type: nodeport
+  type: NodePort
   app: roboshop
   tier: web
   ports:
