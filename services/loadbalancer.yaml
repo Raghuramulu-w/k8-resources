@@ -12,7 +12,7 @@ spec:
      ports:
       - containerPort: 80
 ---
-apiVeersion: v1
+apiVersion: v1
 kind: Service
 metadata:
  name: pod-service
