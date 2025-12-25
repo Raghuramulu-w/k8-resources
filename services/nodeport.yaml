@@ -19,8 +19,8 @@ metadata:
 spec:
   type: NodePort
   selector:
-  app: roboshop
-  tier: web
+   app: roboshop
+   tier: web
   ports:
     - protocol: TCP
       port: 80
