@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata: 
  name: myconfig
- data: 
+data: 
   app: devop
   trainer: raghuramulu
 ---
