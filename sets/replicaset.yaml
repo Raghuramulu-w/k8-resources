@@ -11,14 +11,14 @@ spec:
    matchLabels:
     app: nginx
     tier: frontend
-template:
-  metadata:
-   labels:
-     app: nginx
-     tier: frontend
-  spec::
-   containers:
-    - name: pod-name
-      image: nginx
-      ports:
-       - containerPort: 80
+ template:
+    metadata:
+     labels:
+      app: nginx
+      tier: frontend
+    spec::
+      containers:
+       - name: pod-name
+         image: nginx
+         ports:
+          - containerPort: 80
