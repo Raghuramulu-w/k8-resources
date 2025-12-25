@@ -13,15 +13,14 @@ spec:
      - containerPort: 80
 ---
 apiVersion: v1
-kind: Pod
+kind: Service
 metadata: 
  name: pod-cluster
- labels: 
+spec:
+ selector: 
   app: nginx
   demo: service
-spec:
- containers: 
-  - name: myservice
-    image: nginx
-    ports:
-     - containerPort: 80
+  ports:
+   - protocal: tcp
+     port: 80
+     targetPort: 9376
